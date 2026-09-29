@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Name Manager</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .container {
+            width: 500px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 10px;
+            width: 60%;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        li {
+            margin: 10px;
+            text-align: left;
+        }
+
+        .delete {
+            background-color: red;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Student Name Manager</h2>
+
+    <input type="text" id="studentName" placeholder="Enter student name">
+
+    <button onclick="addStudent()">Add Student</button>
+
+    <h3>Student List</h3>
+
+    <ul id="studentList"></ul>
+
+</div>
+
+<script>
+
+function addStudent() {
+
+    let name = document.getElementById("studentName").value;
+
+    if (name == "") {
+        alert("Please enter student name");
+        return;
+    }
+
+    let li = document.createElement("li");
+
+    li.innerHTML = name +
+        ' <button class="delete" onclick="deleteStudent(this)">Delete</button>';
+
+    document.getElementById("studentList").appendChild(li);
+
+    document.getElementById("studentName").value = "";
+}
+
+function deleteStudent(button) {
+    button.parentElement.remove();
+}
+
+</script>
+
+</body>
+</html>

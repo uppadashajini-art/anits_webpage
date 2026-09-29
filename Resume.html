@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Uppada Shajini - Full Stack Developer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+            line-height: 1.5;
+        }
+
+        .resume {
+            width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 35px 45px;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #222;
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+
+        .header h2 {
+            font-size: 17px;
+            font-weight: normal;
+            margin-bottom: 8px;
+        }
+
+        .contact {
+            font-size: 13px;
+        }
+
+        .contact a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        section h2 {
+            font-size: 17px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+        }
+
+        .education-item,
+        .project,
+        .experience {
+            margin-bottom: 12px;
+        }
+
+        .title {
+            font-weight: bold;
+        }
+
+        .date {
+            float: right;
+            font-size: 13px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 4px;
+            font-size: 13px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            row-gap: 5px;
+            font-size: 13px;
+        }
+
+        .skill-title {
+            font-weight: bold;
+        }
+
+        .project h3 {
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .resume {
+                margin: 0;
+                width: 100%;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Uppada Shajini</h1>
+        <h2>Full Stack Developer | Java | Spring Boot | React</h2>
+
+        <div class="contact">
+            Andhra Pradesh, India |
+            <a href="mailto:uppadashajini@gmail.com">
+                uppadashajini@gmail.com
+            </a>
+            |
+            <a href="https://github.com/uppadashajini-art">
+                GitHub
+            </a>
+            |
+            <a href="https://linkedin.com">
+                LinkedIn
+            </a>
+        </div>
+    </div>
+
+
+    <!-- SUMMARY -->
+    <section>
+        <h2>PROFILE</h2>
+
+        <p>
+            Computer Science and Engineering student specializing in Artificial
+            Intelligence and Machine Learning with experience in full-stack
+            development using Java, Spring Boot, React, MySQL and MongoDB.
+            Interested in building scalable web applications and AI-powered
+            solutions.
+        </p>
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section>
+        <h2>EDUCATION</h2>
+
+        <div class="education-item">
+            <span class="title">
+                B.Tech – Computer Science and Engineering (AI & ML)
+            </span>
+
+            <span class="date">2024 – 2028</span>
+
+            <p>
+                Anil Neerukonda Institute of Technology and Sciences (ANITS)
+            </p>
+
+            <p>
+                CGPA: 9.03
+            </p>
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section>
+        <h2>TECHNICAL SKILLS</h2>
+
+        <div class="skills">
+
+            <div class="skill-title">Languages</div>
+            <div>Java, Python, JavaScript, HTML, CSS</div>
+
+            <div class="skill-title">Frontend</div>
+            <div>React.js, Vite, Tailwind CSS</div>
+
+            <div class="skill-title">Backend</div>
+            <div>Spring Boot, FastAPI, REST APIs</div>
+
+            <div class="skill-title">Databases</div>
+            <div>MySQL, MongoDB</div>
+
+            <div class="skill-title">AI / ML</div>
+            <div>Generative AI, LLMs, AI Agents</div>
+
+            <div class="skill-title">Tools</div>
+            <div>Git, GitHub, VS Code, Postman</div>
+
+            <div class="skill-title">Deployment</div>
+            <div>Vercel, Render</div>
+
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section>
+        <h2>PROJECTS</h2>
+
+        <div class="project">
+
+            <h3>
+                NEXUS AI – AI-Based Startup Idea Validator
+            </h3>
+
+            <ul>
+                <li>
+                    Developed an AI-powered platform that evaluates startup
+                    ideas using market, customer and competitor analysis.
+                </li>
+
+                <li>
+                    Built the frontend using React and Vite and backend using
+                    FastAPI.
+                </li>
+
+                <li>
+                    Integrated web search using Tavily with DuckDuckGo as a
+                    fallback search source.
+                </li>
+
+                <li>
+                    Implemented AI agents for competitor analysis, market
+                    analysis, SWOT and risk analysis.
+                </li>
+
+                <li>
+                    Deployed the frontend on Vercel and backend on Render.
+                </li>
+            </ul>
+
+            <p>
+                <b>Technologies:</b>
+                React, Vite, FastAPI, Python, AI Agents, Tavily,
+                DuckDuckGo, Git, GitHub
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                DevConnectAI – Full Stack Developer Collaboration Platform
+            </h3>
+
+            <ul>
+                <li>
+                    Developed a full-stack platform for developers to manage
+                    projects, tasks and team members.
+                </li>
+
+                <li>
+                    Built REST APIs using Java and Spring Boot.
+                </li>
+
+                <li>
+                    Implemented authentication and authorization using JWT.
+                </li>
+
+                <li>
+                    Integrated MySQL database for persistent application data.
+                </li>
+
+                <li>
+                    Developed responsive frontend components using React and
+                    Tailwind CSS.
+                </li>
+            </ul>
+
+            <p>
+                <b>Technologies:</b>
+                Java, Spring Boot, React, MySQL, JWT, Tailwind CSS
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                AI Study Buddy
+            </h3>
+
+            <ul>
+                <li>
+                    Developed an AI-powered learning assistant for students.
+                </li>
+
+                <li>
+                    Added features such as AI chat, quizzes, flashcards,
+                    study plans and PDF summarization.
+                </li>
+
+                <li>
+                    Integrated an LLM-based backend to provide personalized
+                    learning assistance.
+                </li>
+
+                <li>
+                    Used MongoDB for storing user and application data.
+                </li>
+            </ul>
+
+            <p>
+                <b>Technologies:</b>
+                React, JavaScript, Python, MongoDB, LLM, REST API
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTERNSHIP -->
+    <section>
+        <h2>INTERNSHIP</h2>
+
+        <div class="experience">
+
+            <span class="title">
+                AI Internship – Edunet Foundation / AICTE / IBM SkillsBuild
+            </span>
+
+            <span class="date">May 2026 – June 2026</span>
+
+            <ul>
+                <li>
+                    Worked on artificial intelligence and machine learning
+                    concepts through hands-on development.
+                </li>
+
+                <li>
+                    Developed and documented an AI-based project as part of
+                    the internship.
+                </li>
+
+                <li>
+                    Applied AI concepts to solve practical problems.
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- ACHIEVEMENTS -->
+    <section>
+        <h2>ACHIEVEMENTS & ACTIVITIES</h2>
+
+        <ul>
+            <li>
+                Participated in Amazon ML Challenge 2026.
+            </li>
+
+            <li>
+                Participated in Springboard 7.0 Batch 3.
+            </li>
+
+            <li>
+                Built multiple full-stack and AI-based applications.
+            </li>
+
+            <li>
+                Practicing Data Structures and Algorithms using Java.
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- CERTIFICATIONS -->
+    <section>
+        <h2>CERTIFICATIONS</h2>
+
+        <ul>
+            <li>IBM SkillsBuild – Artificial Intelligence</li>
+            <li>AICTE Internship – Artificial Intelligence</li>
+            <li>Edunet Foundation AI Internship</li>
+        </ul>
+    </section>
+
+
+</div>
+
+</body>
+</html>
